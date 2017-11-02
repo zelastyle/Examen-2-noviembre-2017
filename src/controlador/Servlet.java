@@ -6,6 +6,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import javax.servlet.RequestDispatcher;
@@ -70,6 +71,7 @@ public class Servlet extends HttpServlet {
 			switch (action) {
 			
 			case "Ejercicio1":
+				enlacesArrayList(request);
 				url = base + "ejercicio1.jsp";
 				break;
 			
@@ -158,6 +160,21 @@ public class Servlet extends HttpServlet {
 		} catch (SQLException e) {
 		}
 		return null;
+	}
+	
+	public void enlacesArrayList(HttpServletRequest request) {
+		
+		HttpSession sesion = request.getSession();
+
+		ArrayList<String> enlaces = new ArrayList<String>();
+		
+		enlaces.add("https://www.google.es/");
+		enlaces.add("https://es-es.facebook.com/");
+		enlaces.add("https://www.codecademy.com/es");
+		enlaces.add("http://www.laprovincia.es/");
+		enlaces.add("http://www.ieselrincon.org");
+
+		sesion.setAttribute("arrayEnlaces", enlaces);
 	}
 
 }
