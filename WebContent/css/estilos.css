@@ -1,0 +1,53 @@
+#form {
+	overflow:hidden;
+	width:50%;
+	margin:auto;
+	
+}
+
+#input-container {
+	width:50%;
+	margin-left:25%;
+	
+}
+
+#input-container input {
+	padding:15px;
+	
+	margin-bottom: 20px;
+}
+
+#submit-container {
+	width:50%;
+	margin:auto;
+}
+
+#btn-submit {
+	padding:10px;
+	margin-left: 20%;
+}
+
+#form h2 {
+	text-align:center;
+}
+
+#cerrar {
+	padding:10px;
+}
+
+#datos {
+	width:60%;
+	margin:auto;
+}
+
+#datos p{
+	text-align:center;
+}
+
+#datos h1 {
+	text-align:center;
+}
+
+#cerrar {
+	margin-left:43%;
+}
